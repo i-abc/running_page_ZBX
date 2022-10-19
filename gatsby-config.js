@@ -1,18 +1,14 @@
 module.exports = {
   pathPrefix: '/running_page', // Change to `/running_page` when running on github pages
   siteMetadata: {
-    siteTitle: '跑步日记 | ZBX',
-    siteUrl: 'https://running.shifeiti.com',
-    logo: 'https://pic.rmb.bdstatic.com/bjh/3f12ba8edb6f10d6c431a4837ab99f6a.png',
-    description: '是非题博主蝴蝶的跑步日记',
+    siteTitle: 'ZBX的跑步日记',
+    siteUrl: 'https://zbx.shifeiti.com',
+    logo: 'https://pic.rmb.bdstatic.com/bjh/05b0618a7c3658fea85db2b644c7d333.jpeg',
+    description: 'ZBX的跑步日记',
     navLinks: [
       {
-        name: '博客',
-        url: 'https://www.shifeiti.com',
-      },
-      {
-        name: 'Strava',
-        url: 'https://www.strava.com/athletes/90400722',
+        name: '',
+        url: '',
       },
     ],
   },
