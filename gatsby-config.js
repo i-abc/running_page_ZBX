@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/running_page', // Change to `/running_page` when running on github pages
   siteMetadata: {
-    siteTitle: '跑步日记 | 是非题',
+    siteTitle: '跑步日记 | ZBX',
     siteUrl: 'https://running.shifeiti.com',
     logo: 'https://pic.rmb.bdstatic.com/bjh/3f12ba8edb6f10d6c431a4837ab99f6a.png',
     description: '是非题博主蝴蝶的跑步日记',

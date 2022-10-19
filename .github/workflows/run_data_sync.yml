@@ -22,8 +22,8 @@ on:
 env:
   # please change to your own config.
   RUN_TYPE: strava # support strava/nike/garmin/garmin_cn/keep/only_gpx/nike_to_strava/strava_to_garmin/strava_to_garmin_cn/garmin_to_strava/garmin_to_strava_cn, Please change the 'pass' it to your own
-  ATHLETE: 蝴蝶
-  TITLE: 蝴蝶的跑步之旅
+  ATHLETE: ZBX
+  TITLE: ZBX的跑步之旅
   MIN_GRID_DISTANCE: 0 # change min distance here
   TITLE_GRID: Over 0km Runs # also here
   GITHUB_NAME: i-abc
@@ -73,6 +73,11 @@ jobs:
         if: env.RUN_TYPE == 'keep'
         run: |
           python scripts/keep_sync.py ${{ secrets.KEEP_MOBILE }} ${{ secrets.KEEP_PASSWORD }} --with-gpx
+
+      - name: Run sync Codoon script
+        if: env.RUN_TYPE == 'codoon'
+        run: |
+          python scripts/codoon_sync.py ${{ secrets.CODOON_MOBILE }} ${{ secrets.CODOON_PASSWORD }} --with-gpx
 
       - name: Run sync Strava script
         if: env.RUN_TYPE == 'strava'
