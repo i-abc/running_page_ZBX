@@ -7,8 +7,8 @@ module.exports = {
     description: 'ZBX的跑步日记',
     navLinks: [
       {
-        name: '',
-        url: '',
+        name: '项目源码',
+        url: 'https://github.com/yihong0618/running_page',
       },
     ],
   },
